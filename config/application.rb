@@ -13,7 +13,7 @@ module Gameapp
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :options]
+        resource '*', :headers => :any, :methods => :any
       end
     end
     config.middleware.use ActionDispatch::Cookies
