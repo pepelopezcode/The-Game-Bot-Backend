@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   post '/login', to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   get "/me", to: "users#show"
+
+  get "/scores", to: "wordle_scores#index"
+  post "/scores", to: "wordle_scores#create"
 end

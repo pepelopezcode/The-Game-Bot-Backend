@@ -73,3 +73,4 @@ end
 gem 'bcrypt', '~>3.1.7'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'jwt'
+gem 'active_model_serializers'
